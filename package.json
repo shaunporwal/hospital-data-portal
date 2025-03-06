@@ -2,6 +2,7 @@
   "name": "hospital-data-portal",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://shaunporwal.github.io/hospital-data-portal",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
