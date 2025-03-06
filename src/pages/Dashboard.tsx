@@ -6,14 +6,11 @@ import { UserNav } from "@/components/user-nav"
 import { Link } from "react-router-dom"
 
 export default function DashboardPage() {
-    // Get the base URL from the Vite environment or default to '/'
-    const baseUrl = import.meta.env.BASE_URL || '/';
-
     return (
         <div className="flex min-h-screen flex-col">
             <header className="border-b">
                 <div className="container flex h-16 items-center justify-between py-4">
-                    <Link to={`${baseUrl}dashboard`}>
+                    <Link to="/dashboard">
                         <h1 className="text-xl font-bold">Hospital Data Portal</h1>
                     </Link>
                     <UserNav />

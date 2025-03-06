@@ -2,15 +2,12 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 export default function Home() {
-    // Get the base URL from the Vite environment or default to '/'
-    const baseUrl = import.meta.env.BASE_URL || '/';
-
     return (
         <div className="flex min-h-screen flex-col">
             <header className="bg-primary py-6">
                 <div className="container flex items-center justify-between">
                     <h1 className="text-2xl font-bold text-primary-foreground">Hospital Data Portal</h1>
-                    <Link to={`${baseUrl}login`}>
+                    <Link to="/login">
                         <Button variant="secondary">Login</Button>
                     </Link>
                 </div>
@@ -25,10 +22,10 @@ export default function Home() {
                             A centralized platform for hospital departments to submit data for analysis
                         </p>
                         <div className="flex flex-col gap-4 sm:flex-row">
-                            <Link to={`${baseUrl}login`}>
+                            <Link to="/login">
                                 <Button size="lg">Get Started</Button>
                             </Link>
-                            <Link to={`${baseUrl}about`}>
+                            <Link to="/about">
                                 <Button variant="outline" size="lg">
                                     Learn More
                                 </Button>
@@ -115,10 +112,10 @@ export default function Home() {
                         &copy; {new Date().getFullYear()} Hospital Data Portal. All rights reserved.
                     </p>
                     <div className="flex gap-4">
-                        <Link to={`${baseUrl}terms`} className="text-sm text-muted-foreground underline underline-offset-4">
+                        <Link to="/terms" className="text-sm text-muted-foreground underline underline-offset-4">
                             Terms of Service
                         </Link>
-                        <Link to={`${baseUrl}privacy`} className="text-sm text-muted-foreground underline underline-offset-4">
+                        <Link to="/privacy" className="text-sm text-muted-foreground underline underline-offset-4">
                             Privacy
                         </Link>
                     </div>

@@ -20,12 +20,9 @@ export function UserNav() {
         initials: "MS",
     })
 
-    // Get the base URL from the Vite environment or default to '/'
-    const baseUrl = import.meta.env.BASE_URL || '/';
-
     const handleLogout = () => {
         // In a real app, this would clear authentication
-        navigate(baseUrl)
+        navigate("/")
     }
 
     return (
